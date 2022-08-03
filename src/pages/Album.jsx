@@ -39,15 +39,12 @@ export default class Album extends Component {
                 {
                   musics.slice(1).map((music) => {
                     const {
-                      trackName,
                       trackId,
-                      previewUrl,
                     } = music;
                     return (
                       <li key={ trackId }>
                         <MusicCard
-                          trackName={ trackName }
-                          previewUrl={ previewUrl }
+                          music={ music }
                         />
                       </li>
                     );
